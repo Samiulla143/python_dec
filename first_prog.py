@@ -7,3 +7,8 @@ print('tax amount',tax)
 
 
 #2nd Prog
+
+ip1 = int(input('enter one num:'))
+ip2 = int(input('enter second num:'))
+
+
