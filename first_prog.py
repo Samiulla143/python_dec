@@ -1,4 +1,5 @@
-# num = int (input('enter the amont:'))
+#1st prog
+# # num = int (input('enter the amont:'))
 
 # tax= num*(18/100)
 
@@ -16,18 +17,15 @@
 # mul = ip1*ip2
 # div = ip1/ip2
 
-# operation = input('what do you wnat to calculate:'
-#                   'add'
-#                   'sub'
-#                   'mul'
-#                   'div')
-
-
-# if operation == add:
-#     print(add)
-# elif operation == sub:
-#     print(sub)
-# elif operation == mul:
-#     print(mul)
-# elif operation == div:
-#     print(div)
+# operation = input('What do you want to calculate (add, sub, mul, div)? ').strip().lower() 
+# # Perform the operation based on user input 
+# if operation == 'add': 
+#     print('Result:', add)
+# elif operation == 'sub': 
+#     print('Result:', sub) 
+# elif operation == 'mul': 
+#     print('Result:', mul)
+# elif operation == 'div': 
+#     print('Result:', div) 
+# else: 
+#     print('Invalid operation selected.')
