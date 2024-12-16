@@ -55,4 +55,4 @@ if usd_price == 0:
 elif usd_price==5: 
     print(f"The ticket price in Indian Rupees:",Indian_Rupees) 
 else:
-    print(f"The ticket price in Indian Rupees: ₹{Indian_Rupees:.2f}")
+    print(f"The ticket price in Indian Rupees: {Indian_Rupees:.2f}")
