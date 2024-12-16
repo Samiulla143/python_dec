@@ -51,8 +51,6 @@ else:
 Indian_Rupees = usd_price * usd_to_inr
 
 if usd_price == 0: 
-    print("The ticket is free!") 
-elif usd_price==5: 
-    print(f"The ticket price in Indian Rupees:",Indian_Rupees) 
+    print("The ticket is free!")
 else:
     print(f"The ticket price in Indian Rupees: {Indian_Rupees:.2f}")
