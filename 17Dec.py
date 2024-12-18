@@ -47,6 +47,17 @@ while True:
         print('2.Issues with pending payment')
         print('3.Issues with succesful payment')
         print('4.Issues with payment made to merchants')
+        while True:
+            user_inp2=int(input('enter Your Choice:'))
+            if user_inp2==1:
+                        print('1.Issues with failed payment')
+            elif user_inp2==2:
+                        print('2.Issues with pending payment')
+            pass
+
+
+            
+        
     elif user_inp==2:
         print('welcome to profile and privacy')
     elif user_inp==3:
