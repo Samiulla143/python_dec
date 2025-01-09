@@ -47,9 +47,10 @@
 # lst.pop()
 # print(lst)
 
-lst=[10,20,30,40,50]
-print(lst)
-lst.pop(3)
-print(lst)
+# lst=[10,20,30,40,50]
+# print(lst)
+# lst.pop(3)
+# print(lst)
+
 
 
