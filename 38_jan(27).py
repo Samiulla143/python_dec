@@ -21,6 +21,19 @@
 # f1.show()
 # f1.add()
 
+
+
+
+
+user_name=input('enter user name:')
+plan=input('enter plan ex:normal, prime:')
+id=int(input('enter id:'))
+lst=[111,222,333]
+if plan=='prime' and id in lst:
+    print(' u r prime member')
+else:
+    print('invalid prime user')
+
 tickets=[1,2,3,4,5]
 def show():
     for x in tickets:
