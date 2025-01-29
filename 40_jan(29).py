@@ -30,11 +30,11 @@ f.carry_weapons()
 
 
 
-lst1=['111','222']
+# lst1=['111','222']
 
-for x in lst1:
-    sum=0
-    for y in x:
-        sum=sum+int(y)
-    print(sum)
+# for x in lst1:
+#     sum=0
+#     for y in x:
+#         sum=sum+int(y)
+#     print(sum)
 
