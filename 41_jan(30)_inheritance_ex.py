@@ -24,7 +24,130 @@ platinum_user1.display_info()
 #polymorphism:one code in many ways
 
 #method overloading : python never supports overloading
-#method overriding :same method names  diffrent parameters is called as method overriding
+#method overriding :same method names  diffrent parameters is called as method overriding'''
+
+# class Messenger:
+#     def use_keyboard(self):
+#         print('Using keyboard')
+
+#     def send_message(self): 
+#         print('Text message sent')
+
+#     def receive_message(self): 
+#         print('Text message received')
+
+# class WhatsApp(Messenger):
+#     def send_message(self): 
+#         print('Text, video & audio sent using WA')
+
+#     def receive_message(self):
+#         print('Text, video & audio received using WA')
+
+# class FacebookMessenger(Messenger):
+#     def send_message(self): 
+#         print('Text, video & audio sent using FB')
+
+#     def receive_message(self): 
+#         print('Text, video & audio received using FB')
+
+# class InstaMessenger(Messenger):
+#     def send_message(self): 
+#         print('Text, video & audio sent using Insta')
+#     def receive_message(self): 
+#         print('Text, video & audio received using Insta')
+
+# def use_message(ref):
+#     ref.use_keyboard()
+#     ref.send_message()
+#     ref.receive_message()
+
+# WA = WhatsApp()
+# FB = FacebookMessenger()
+# IM = InstaMessenger()
+
+# use_message(WA)
+# use_message(FB)
+# use_message(IM)
+
+
+# -------------------------------------------------------------------------------------------------------------------------
+
+# class Messenger:
+
+#     def use_keyboard(self): 
+#         print('Using keyboard')
+
+#     def send_message (self): 
+#         print('Text messge sent')
+
+#     def receive_message (self): 
+#         print('Text messge received')
+
+# class WhatsApp(Messenger):
+
+#     def send_message (self): 
+#         print('Text, video & audio sent using WA')
+
+#     def receive_message (self): 
+#         print('Text, video & audio receive using WA')
+
+#     def send_live_location (self): 
+#         print('Live location sent using WA')
+
+# class FacebookMessenger(Messenger):
+
+#     def send_message (self): 
+#         print('Text, video & audio sent using FB')
+
+#     def receive_message (self): 
+#         print('Text, video & audio receive using FB')
+
+#     def use_builtin_apps (self): 
+#         print('Using biiltin apps using FB')
+
+# class InstagramMessenger (Messenger):
+
+#     def send_message (self):
+
+#         print('Text, video & audio sent using Insta')
+
+#     def receive_message (self): 
+#         print('Text, video & audio receive using Insta')
+
+#     def add_filters (self): 
+#         print('Filters using Insta')
+
+# def use_message (ref):
+
+#     ref.use_keyboard()
+
+#     ref.send_message()
+
+#     ref.receive_message()
+
+#     if type(ref) == WhatsApp:
+
+#         ref.send_live_location()
+
+#     if type(ref) == FacebookMessenger:
+
+#         ref.use_builtin_apps()
+
+#     if type(ref) == InstagramMessenger:
+
+#         ref.add_filters()
+
+# wa = WhatsApp()
+
+# fb = FacebookMessenger()
+
+# insta = InstagramMessenger()
+
+# use_message(wa)
+
+# use_message(fb)
+
+# use_message(insta)
 
 
 
@@ -41,7 +164,7 @@ Inheritance allows you to create a new class based on an existing class, enablin
 Banking System: Different types of accounts (savings, current, fixed deposit) can inherit from a base account class.'''
 
 
-'''Online Shopping: Different user roles (buyer, seller, admin) can inherit from a base user class.'''
+'''Online Shopping: Different user roles (buyer, seller, admin) can inherit from a base user class.
 
 class User:
     def __init__(self, username, email):
@@ -92,11 +215,11 @@ admin.display_info()
 admin.manage_user(buyer)
 
 
-'''Game Development: Different game characters (player, enemy, NPC) can inherit from a base character class.
+Game Development: Different game characters (player, enemy, NPC) can inherit from a base character class.
 
 Content Management Systems: Different types of content (article, blog post, news) can inherit from a base content class.
 
-Library Management System: Different types of items (books, magazines, journals) can inherit from a base item class.'''
+Library Management System: Different types of items (books, magazines, journals) can inherit from a base item class.
 
 #2. Python Program Using Inheritance for a Hotel Application
 class Customer:
@@ -139,10 +262,10 @@ staff1.display_info()
 
 
 
-'''
+
 3. Achieving Inheritance with the Help of a Database To achieve inheritance with the help of a database, 
 you can use object-relational mapping (ORM) tools like SQLAlchemy in Python. ORM allows you to map class
-inheritance hierarchies to database tables. Here's a basic example:'''
+inheritance hierarchies to database tables. Here's a basic example:
 
 
 from sqlalchemy import create_engine, Column, Integer, String
