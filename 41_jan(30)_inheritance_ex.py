@@ -1,17 +1,104 @@
-'''1. Real-time Applications Using Inheritance in Python
+'''
+class customer:
+    def __init__(self):
+        self.name=Name
+        self.ph=ph
+        self.mail=mail
+class platinumuser:
+    def __init__(self,name,ph,mail):
+        super().__init__(name,ph,mail)
+        self.plat_id=plat_id
+        
+    def display(self):
+        super().display_info()
+        print(f"Platinum ID: {self.plat_id}")
+
+# Example usage
+customer1 = Customer("Alice", "1234567890", "alice@example.com")
+platinum_user1 = PlatinumUser("Bob", "0987654321", "bob@example.com", "PLAT123")
+
+customer1.display_info()
+platinum_user1.display_info()
+    
+    
+#polymorphism:one code in many ways
+
+#method overloading : python never supports overloading
+#method overriding :same method names  diffrent parameters is called as method overriding
+
+
+
+
+
+
+'''1.examples of real time application using inheritance in python.
+2. python program using inheritance of the hotel application(customer,prime customer, staff).
+3.how to achieve inheritance with the help of data base (sqlite3 and python connection)
+
+1. Real-time Applications Using Inheritance in Python
 Inheritance allows you to create a new class based on an existing class, enabling code reusability and a hierarchical class structure. Some real-time applications include:
 
-Banking System: Different types of accounts (savings, current, fixed deposit) can inherit from a base account class.
+Banking System: Different types of accounts (savings, current, fixed deposit) can inherit from a base account class.'''
 
-Online Shopping: Different user roles (buyer, seller, admin) can inherit from a base user class.
 
-Game Development: Different game characters (player, enemy, NPC) can inherit from a base character class.
+'''Online Shopping: Different user roles (buyer, seller, admin) can inherit from a base user class.'''
+
+class User:
+    def __init__(self, username, email):
+        self.username = username
+        self.email = email
+
+    def display_info(self):
+        print(f"Username: {self.username}, Email: {self.email}")
+
+class Buyer(User):
+    def __init__(self, username, email, cart):
+        super().__init__(username, email)
+        self.cart = cart
+
+    def add_to_cart(self, item):
+        self.cart.append(item)
+        print(f"Added {item} to cart.")
+
+class Seller(User):
+    def __init__(self, username, email, store_name):
+        super().__init__(username, email)
+        self.store_name = store_name
+        self.inventory = []
+
+    def add_inventory(self, item):
+        self.inventory.append(item)
+        print(f"Added {item} to inventory.")
+
+class Admin(User):
+    def __init__(self, username, email):
+        super().__init__(username, email)
+
+    def manage_user(self, user):
+        print(f"Managing user: {user.username}")
+
+# Example usage
+buyer = Buyer("buyer01", "buyer@example.com", [])
+seller = Seller("seller01", "seller@example.com", "BestStore")
+admin = Admin("admin01", "admin@example.com")
+
+buyer.display_info()
+buyer.add_to_cart("Laptop")
+
+seller.display_info()
+seller.add_inventory("Smartphone")
+
+admin.display_info()
+admin.manage_user(buyer)
+
+
+'''Game Development: Different game characters (player, enemy, NPC) can inherit from a base character class.
 
 Content Management Systems: Different types of content (article, blog post, news) can inherit from a base content class.
 
 Library Management System: Different types of items (books, magazines, journals) can inherit from a base item class.'''
 
-
+#2. Python Program Using Inheritance for a Hotel Application
 class Customer:
     def __init__(self, name, age, gender):
         self.name = name
@@ -55,7 +142,7 @@ staff1.display_info()
 '''
 3. Achieving Inheritance with the Help of a Database To achieve inheritance with the help of a database, 
 you can use object-relational mapping (ORM) tools like SQLAlchemy in Python. ORM allows you to map class
-inheritance hierarchies to database tables. Here's a basic example:
+inheritance hierarchies to database tables. Here's a basic example:'''
 
 
 from sqlalchemy import create_engine, Column, Integer, String
